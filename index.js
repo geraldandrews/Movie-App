@@ -20,7 +20,7 @@ app.set('trust proxy', 1)
 app.use(cors())
 
 // Set static folder
-app.use(express.static('docs'))
+app.use(express.static('dist'))
 
 // Routes
 app.use('/api', require('./routes'))
